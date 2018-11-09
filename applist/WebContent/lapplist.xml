@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<AppList xmlns="dpapplist"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="dpapplist dpapplist.xsd" type="integrationTest" usedfor="local" solution="any">
+	<dp_app>
+		<dp_app_desc>Test local Application SP1</dp_app_desc>
+		<dp_app_url>https://sp.test.org/sp1</dp_app_url>
+		<dp_domain_abbr>LOCAL1</dp_domain_abbr>
+		<dp_app_visualfor>all</dp_app_visualfor>	
+	</dp_app>
+	<dp_app>
+		<dp_app_desc>Test local Application SP2</dp_app_desc>
+		<dp_app_url>https://sp.test.org/sp2</dp_app_url>
+		<dp_domain_abbr>LOCAL2</dp_domain_abbr>
+		<dp_app_visualfor>all</dp_app_visualfor>	
+	</dp_app>
+	<!-- For example if you want to add a new application called Application 1,
+	the application url is http://dp.novellit.hksarg/itapp/app1/app1.jsp,
+	and the application no need to check any attribute from the user profile.
+
+	e.g.
+	<dp_app>
+		<dp_app_desc>Application 1</dp_app_desc>
+		<dp_app_url>/itapp/app1/app1.jsp</dp_app_url>
+		<dp_app_visualfor>all</dp_app_visualfor>
+	</dp_app>
+
+	-->
+
+	<!-- For example if you want to add a new application called Application 2,
+	the application url is http://dp.novellit.hksarg/itapp/app2/app2.jsp,
+	and the application need to check the deptment id attribute from the user profile.
+	for details of attribute please refer to the ldschema.xml or lldschema.xml
+	e.g.
+	<dp_app>
+		<dp_app_desc>Applicatio2</dp_app_desc>
+		<dp_app_url>/itapp/app2/app2.jsp</dp_app_url>
+		<dp_app_visualfor>condition</dp_app_visualfor>
+		<dp_app_condition>DPDEPTID equal "ibmit"</dp_app_condition>
+	</dp_app>
+	<dp_app>
+		<dp_app_desc>OSDP App3 (Conditional)</dp_app_desc>
+		<dp_app_url>/itapp/app3/app3.jsp</dp_app_url>
+		<dp_app_visualfor>condition</dp_app_visualfor>
+		<dp_app_condition>DPRANKCODE equal "99"</dp_app_condition>
+	</dp_app>
+	<dp_app>
+		<dp_app_desc>OSDP App4 (Conditional AND)</dp_app_desc>
+		<dp_app_url>/itapp/app4/app4.jsp</dp_app_url>
+		<dp_app_visualfor>condition</dp_app_visualfor>
+		<dp_app_condition>DPRANKCODE equal "99" AND DPHKID equal "11111"</dp_app_condition>
+	</dp_app>
+	<dp_app>
+		<dp_app_desc>OSDP App5 (Conditional OR)</dp_app_desc>
+		<dp_app_url>/itapp/app5/app5.jsp</dp_app_url>
+		<dp_app_visualfor>condition</dp_app_visualfor>
+		<dp_app_condition>DPRANKCODE equal "99"</dp_app_condition>
+		<dp_app_condition>DPSTAFFGROUP equal "2222"</dp_app_condition>
+	</dp_app>
+	-->
+</AppList>

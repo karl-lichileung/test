@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Mapping>
+<ServiceProvider>LOCAL1<EntityID>https://sp.test.org/sp1/shibboleth</EntityID></ServiceProvider>
+<ServiceProvider>LOCAL2<EntityID>https://sp.test.org/sp2/shibboleth</EntityID></ServiceProvider>
+<ServiceProvider>REMOTE1<EntityID>https://sp1.test.ccgo.org/shibboleth</EntityID></ServiceProvider>
+<ServiceProvider>CSP<EntityID>CSPSP</EntityID></ServiceProvider>
+<ServiceProvider>OSDP02<EntityID>osdp02sp</EntityID></ServiceProvider>
+<ServiceProvider>IBM3IT<EntityID>IBM3IT</EntityID></ServiceProvider>
+<ServiceProvider>NAMIT<EntityID>https://dp.namit.ccgo.hksarg:8443/nidp/saml2/metadata</EntityID></ServiceProvider>
+<ServiceProvider>NAM31IT<EntityID>https://dp.nam31it.ccgo.hksarg:8443/nidp/saml2/metadata</EntityID></ServiceProvider>
+<ServiceProvider>NAM32IT<EntityID>https://dp.nam32it.ccgo.hksarg:8443/nidp/saml2/metadata</EntityID></ServiceProvider>
+<ServiceProvider>NAM32IT<EntityID>https://dp.nam4it.ccgo.hksarg:8443/nidp/saml2/metadata</EntityID></ServiceProvider>
+</Mapping>

@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+ul.menu{
+	z-index: 100;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+ul.menu li{
+	padding-left: 0;
+	width: 100%;
+	margin-bottom: 0;
+}
+/* ul.menu li:first-child a{
+	border-top: 1px solid #ffffff;
+} */
+
+/* Fix IE 6 Bug */
+ul.menu li a{
+	display: block;
+	font-size: 0.813em;
+	color: #ffffff;
+	background-color: transparent;
+	padding: 6px 20px 7px 20px;
+	/* margin-right: 15px; */
+	/* border-bottom: 1px solid #3EC09E; */
+	text-decoration: none;
+	font-weight: bold;
+	margin-bottom: 1px;
+	position: relative;
+	-webkit-transition: background-color .3s,color .3s;
+    transition: background-color .3s,color .3s;
+}
+ul.menu li a:after{
+	content: '';
+	position: absolute;
+	left: 15px;
+	bottom: -1px;
+	height: 1px;
+	width: calc(100% - 30px);
+	background-color: #3EC09E;
+}
+
+ul.menu li:first-child a:before{
+	content: '';
+	position: absolute;
+	left: 15px;
+	top: -1px;
+	height: 1px;
+	width: calc(100% - 30px);
+	background-color: #ffffff;
+}
+
+ul.menu li a:hover, ul.menu li a.keyfocus, ul.menu li a.selected, ul.menu li a:visited.selected {
+	background-color: #015d8e;
+}
+
+ul.menu li div.menuseperator{
+}
+
+
+ul.menu li ul.sub{
+	position:absolute;
+	width:250px;
+	z-index:1;
+	top:-10000px;
+	z-index: 100;
+	margin-left: 250px;
+	/* padding: 15px; */
+	background-color: rgba(1, 93, 142, .99);
+	padding-bottom: 10px;
+}
+
+ul.menu li ul.sub li{
+	width:100%;
+	display: block;
+	list-style-type: none;
+	padding: 0;
+}
+ul.menu li ul.sub li a{
+	margin-right: 0;
+	padding: 7px 15px 8px 15px;
+	/* border-top: 1px solid #fffbcc; */
+}
+ul.menu li ul.sub li a:after{
+	background-color: #46938D;
+}
+ul.menu li ul.sub li a:hover,
+ul.menu li ul.sub li a:focus, 
+ul.menu li ul.sub li a.selected{
+	background-color: rgba(91, 173, 213, .85);
+}
+ul.menu li ul.sub li:first-child a{
+	border-top: 0;
+}
+
+#sidebar{
+	position: absolute;
+	display: table-cell;
+	background-color: #07819b;
+	width: 200px;
+	padding: 15px 0 0;
+	min-width: 200px;
+	vertical-align: top;
+	height:auto;
+}

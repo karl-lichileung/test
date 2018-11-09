@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<dp_ldap_schema xmlns="dpuser"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="dpuser dpuser.xsd">
+	<attribute_name vtype="cis">uid</attribute_name>
+	<attribute_name vtype="cis">sn</attribute_name>
+	<attribute_name vtype="cis">employeeType</attribute_name>
+	<attribute_name vtype="cis">cn</attribute_name>
+	<attribute_name vtype="cis">DPHKID</attribute_name>
+	<attribute_name vtype="cis">DPDEPTID</attribute_name>
+	<attribute_name vtype="cis">DPRANKCODE</attribute_name>
+	<attribute_name vtype="int">DPSTAFFGROUP</attribute_name>
+</dp_ldap_schema>
+

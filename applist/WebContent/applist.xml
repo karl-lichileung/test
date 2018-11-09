@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<AppList xmlns="dpapplist" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="dpapplist dpapplist.xsd" type="production" solution="any" usedfor="crossdomain" fileversion="9">
+<dp_app>
+<dp_app_desc>Test Application 1</dp_app_desc>
+<dp_app_url>https://sp1.test.ccgo.org/app1</dp_app_url>
+<dp_domain_abbr>REMOTE1</dp_domain_abbr>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>all</dp_app_visualfor>
+</dp_app>
+<dp_app>
+<dp_app_desc>Test Application 2</dp_app_desc>
+<dp_app_url>https://dp.ibmit.ccgo.hksarg/itapp/app2/app2.jsp</dp_app_url>
+<dp_domain_abbr>afcd</dp_domain_abbr>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>condition</dp_app_visualfor>
+<dp_app_condition>DPHKID equal "11121" AND cn equal "user"</dp_app_condition>
+</dp_app>
+<dp_app>
+<dp_app_desc>Test Application 3</dp_app_desc>
+<dp_app_url>https://app2</dp_app_url>
+<dp_domain_abbr>hkpo</dp_domain_abbr>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>condition</dp_app_visualfor>
+<dp_app_condition>DPHKID equal "11121" AND cn equal "user"</dp_app_condition>
+</dp_app>
+<dp_app>
+<dp_app_desc>Demo 1 (rank = 30)</dp_app_desc>
+<dp_app_url>https://rank30.com</dp_app_url>
+<dp_domain_abbr>hkpo</dp_domain_abbr>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>condition</dp_app_visualfor>
+<dp_app_condition>DPRANKCODE equal "30"</dp_app_condition>
+<dp_app_condition>EMPLOYEETYPE equal "99"</dp_app_condition>
+</dp_app>
+<dp_app>
+<dp_app_desc>For every user no condition set</dp_app_desc>
+<dp_app_url>https://everyuser.com</dp_app_url>
+<dp_domain_abbr>hkpo</dp_domain_abbr>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>condition</dp_app_visualfor>
+<dp_app_condition>DPRANKCODE equal "30"</dp_app_condition>
+</dp_app>
+<dp_app>
+<dp_app_desc>App1_Cond_saml_1</dp_app_desc>
+<dp_app_url>https://dp.nam32it.ccgo.hksarg/itapp/app1/app1.jsp</dp_app_url>
+<dp_domain_abbr>NAM32IT</dp_domain_abbr>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>condition</dp_app_visualfor>
+<dp_app_condition>DPDEPTID equal "OSDP"<saml>1.1</saml></dp_app_condition>
+</dp_app>
+<dp_app>
+<dp_app_desc>CSP Eprocurement(agent)</dp_app_desc>
+<dp_app_url>https://sso.csp.ccgo.hksarg</dp_app_url>
+<dp_domain_abbr>CSP</dp_domain_abbr>
+<destination>eprocurement</destination>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>condition</dp_app_visualfor>
+<dp_app_condition>DPDEPTID equal "OSDP"<saml>2.0</saml></dp_app_condition>
+</dp_app>
+<dp_app>
+<dp_app_desc>CSP GOVHRMS CENTRAL(Fedlet)</dp_app_desc>
+<dp_app_url>https://sso.csp.ccgo.hksarg</dp_app_url>
+<dp_domain_abbr>CSP</dp_domain_abbr>
+<destination>GOVHRMS_CENTRAL</destination>
+<ap_protect_ext>false</ap_protect_ext>
+<dp_app_visualfor>all</dp_app_visualfor>
+</dp_app>
+</AppList>

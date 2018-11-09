@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<Mapping>
+<EntityID>https://idp.test.org/idp/shibboleth<SLO>https://idp.test.org/idp/profile/Logout</SLO></EntityID>
+</Mapping>

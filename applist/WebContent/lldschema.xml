@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<dp_ldap_schema xmlns="dpuser"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="dpuser dpuser.xsd">
+              
+</dp_ldap_schema>

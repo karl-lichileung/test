@@ -1,0 +1,53 @@
+a:link { color: #2C3DDC; text-decoration:underline }
+a:visited { text-decoration:underline }
+a:active { text-decoration:underline }
+a:hover { 
+text-decoration:underline;
+cursor:pointer;
+
+ }
+ 
+ a{color: #2C3DDC; text-decoration:underline}
+
+
+
+hr { color: #000000 }
+.engSubTitle { font-family: "Arial"; font-size: 18px; font-weight: bold; color: #FF6600 }
+.engText {
+	font-family: "Arial";
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: normal;
+	word-spacing: normal;
+; color: #003366; font-weight: bold
+
+}
+.engTextSmall { font-family: "Arial"; font-size: 10px}
+.engTitle { font-family: "Arial"; font-size: 12px; font-weight: normal}
+.engbar { font-family: "Arial"; font-size: 12px; line-height: 18px; letter-spacing: normal; word-spacing: normal; }
+.bar { font-family: "Arial"; font-size: xx-small; line-height: 2px; letter-spacing: normal; word-spacing: normal; ; background-color: #FF9933}
+
+.applistRow {
+}
+
+.appName {
+	font-style: normal;
+	text-transform: none;	
+	font-family: Arial;
+	font-size: 10pt;
+	background-color: #ffcc00;
+}
+
+.appProvider {
+	font-style: normal;
+	ont-family: Arial;
+	font-weight: bold;
+	background-color: #ff0033;	
+}
+
+.appLocal {
+	font-style: normal;
+	ont-family: Arial;
+	font-weight: bold;
+	background-color: #cccccc;	
+}

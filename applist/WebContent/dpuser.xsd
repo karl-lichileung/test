@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns="dpuser"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="dpuser"
+elementFormDefault="qualified">
+
+ 	 <xsd:element name="dp_ldap_schema" type="dpldapType"/>
+
+     <xsd:complexType name="dpldapType">
+     	<xsd:choice minOccurs="0" maxOccurs="unbounded">
+         	<xsd:element name="attribute_name" type="valueType"/>
+        </xsd:choice> 	
+     </xsd:complexType>
+
+     
+<xsd:complexType name="valueType">
+	<xsd:simpleContent>
+		<xsd:extension base="xsd:string">
+			<xsd:attribute name="vtype" type="atype"/>		
+		</xsd:extension>
+	</xsd:simpleContent>
+</xsd:complexType>
+
+     <xsd:simpleType name="atype">
+          <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="cis"/>         <!-- case insensitive string  -->
+                <xsd:enumeration value="css"/>         <!-- case sensitive string  -->
+                <xsd:enumeration value="int"/>         <!-- integer  -->
+                <xsd:enumeration value="dec"/>         <!-- decimal  -->
+          </xsd:restriction>
+     </xsd:simpleType>   
+
+            
+</xsd:schema> 

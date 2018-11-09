@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns="dpapplist"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="dpapplist"
+elementFormDefault="qualified">
+
+<xsd:element name="AppList" type="DpAPP"/>
+             
+<xsd:complexType name="DpAPP">
+  <xsd:sequence>
+    <xsd:element name="dp_app" type="AppDetail" minOccurs="0" maxOccurs="unbounded"/>
+  </xsd:sequence>
+  <xsd:attribute name="type" type="TYPE" use="required"/>
+  <xsd:attribute name="solution" type="SOLUTION" use="required"/>
+  <xsd:attribute name="usedfor" type="USERFOR" use="required"/>
+  <xsd:attribute name="fileversion" type="xsd:integer" use="optional"/>    
+</xsd:complexType>
+          
+<xsd:simpleType name="TYPE">
+   <xsd:restriction base="xsd:string">
+       <xsd:enumeration value="integrationTest"/>     <!-- Integration Test  -->
+       <xsd:enumeration value="preproduction"/>       <!-- Pre-Production    -->
+       <xsd:enumeration value="production"/>          <!-- Production        -->
+   </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="SOLUTION">
+   <xsd:restriction base="xsd:string">
+       <xsd:enumeration value="iChain22"/>   
+       <xsd:enumeration value="iChain23"/>  
+       <xsd:enumeration value="TAM41"/>
+       <xsd:enumeration value="TAM51"/>   
+       <xsd:enumeration value="SID6"/> 
+       <xsd:enumeration value="WAC1"/>
+       <xsd:enumeration value="WAC6"/>
+       <xsd:enumeration value="NAM3"/>
+       <xsd:enumeration value="FIM6"/>
+       <xsd:enumeration value="any"/>         
+   </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="USERFOR">
+   <xsd:restriction base="xsd:string">
+       <xsd:enumeration value="crossdomain"/>     <!-- Cross B/D Application List  -->
+       <xsd:enumeration value="local"/>           <!-- Local B/D Application List  -->
+   </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="VISUALFOR">
+   <xsd:restriction base="xsd:string">
+       <xsd:enumeration value="all"/>     <!-- no require condition  -->
+       <xsd:enumeration value="condition"/>           <!-- yes require condition  -->
+   </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="AppDetail">
+  <xsd:sequence>
+    <xsd:element name="dp_app_desc" minOccurs="1" >    
+    	<xsd:simpleType>
+    		<xsd:restriction base="xsd:string">
+         		<xsd:minLength value="1"/>
+        	</xsd:restriction>
+    	</xsd:simpleType>
+    </xsd:element>    
+	<xsd:element name="dp_app_url" minOccurs="1">
+    	<xsd:simpleType>
+    		<xsd:restriction base="xsd:string">
+         		<xsd:minLength value="1"/>
+        	</xsd:restriction>
+    	</xsd:simpleType>
+	</xsd:element>		
+	<xsd:element name="dp_domain_abbr" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		<xsd:element name="destination" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+	<xsd:element name="ap_protect_ext" type="xsd:string" minOccurs="0" maxOccurs="1"/>	
+	<xsd:element name="dp_app_visualfor" type="VISUALFOR" minOccurs="1"/> 
+	<xsd:element name="dp_app_condition" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+  </xsd:sequence>
+</xsd:complexType>              
+
+</xsd:schema> 

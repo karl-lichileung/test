@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcatProjectProperties>
+    <rootDir>/</rootDir>
+    <exportSource>false</exportSource>
+    <reloadable>true</reloadable>
+    <redirectLogger>false</redirectLogger>
+    <updateXml>true</updateXml>
+    <warLocation>C:\Workspace\applist3.0.war</warLocation>
+    <extraInfo></extraInfo>
+    <webPath>/applist3.4</webPath>
+</tomcatProjectProperties>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Mapping>
+<RelayState>https://sp.test.org/sp1<ACS>https://sp.test.org/sp1/Shibboleth.sso/SAML2/POST</ACS></RelayState>
+<RelayState>https://sp.test.org/sp2<ACS>https://sp.test.org/sp2/Shibboleth.sso/SAML2/POST</ACS></RelayState>
+<RelayState>https://sp.test.ccgo.org/sp1<ACS>https://sp.test.ccgo.org/sp1/Shibboleth.sso/SAML2/POST</ACS></RelayState>
+<RelayState>https://sp.test.ccgo.org/sp2<ACS>https://sp.test.ccgo.org/sp2/Shibboleth.sso/SAML2/POST</ACS></RelayState>
+</Mapping>
